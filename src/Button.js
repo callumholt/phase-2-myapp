@@ -1,7 +1,9 @@
-function Button() {
+import React from "react";
+
+function Button(props) {
     return (
-        <a href="#about">
-            <button className="button"  onClick={()=>console.log("clicked button")}>Click me</button>
+        <a href={props.buttonDir}>
+            <button className="button is-primary"  onClick={()=>console.log("clicked button")}>Click here to go to {props.sectionName} section</button>
         </a>
     );
 }
