@@ -85,6 +85,23 @@ h6 {
   background-color: rgba(131, 84, 52, 0.782), 0.651);
 }
 
+/* DARK MODE BELOW: */
+
+#homeDark {
+  background-color: rgb(17, 9, 239);
+}
+
+#aboutDark {
+  background-color: rgb(58, 52, 225);
+}
+
+#portfolioDark {
+  background-color: rgb(146, 143, 225);
+}
+
+/* DARK MODE ABOVE */
+
+
 #about img {
   max-height: 50%;
 }
@@ -96,4 +113,12 @@ h6 {
 
 .column h2 {
   font-size: 200%;
+}
+
+#buttonDarkMode {
+  background-color: blue;
+}
+
+#buttonLightMode {
+  background-color: yellow;
 }
