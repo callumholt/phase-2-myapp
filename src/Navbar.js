@@ -17,6 +17,8 @@ function NavBar() {
             <NavLink to="/portfolio">
             Portfolio
             </NavLink>
+
+            
         </div>
     );
 }

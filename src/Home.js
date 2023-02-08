@@ -1,5 +1,6 @@
 import Button from "./Button";
 import React, { useState } from "react";
+import ContactMe from "./ContactMe";
 
 
 
@@ -20,6 +21,7 @@ function Home() {
                 <h2>My name is Callum and I'm a Software Engineer</h2>
                 <Button buttonDir="#about" sectionName="about"/>
                 <button id={state} onClick={handleClick}>{buttonText}</button>
+                <ContactMe />
             </div>
         </div>
     )
