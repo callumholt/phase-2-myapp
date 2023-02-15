@@ -1,6 +1,7 @@
 import Button from "./Button";
 import React, { useState } from "react";
 import ContactMe from "./ContactMe";
+import RetrieveFormSubmit from "./RetrieveFormSubmit";
 
 
 
@@ -20,8 +21,9 @@ function Home() {
             <div id="home">
                 <h2>My name is Callum and I'm a Software Engineer</h2>
                 <Button buttonDir="#about" sectionName="about"/>
-                <button id={state} onClick={handleClick}>{buttonText}</button>
+                <button className="darkModeButton" id={state} onClick={handleClick}>{buttonText}</button>
                 <ContactMe />
+                <RetrieveFormSubmit />
             </div>
         </div>
     )
