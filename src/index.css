@@ -127,9 +127,23 @@ h6 {
 }
 
 #contactForm {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .darkModeButton {
   margin-top: 100px;
+}
+
+#RetrieveFormSubmit {
+  margin-top: 20px;
+}
+
+.submitButton {
+  display: inline-block;
+}
+
+.formGroup {
+  display: grid;
+  gap: 10px;
+
 }

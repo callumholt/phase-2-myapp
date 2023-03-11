@@ -19,9 +19,16 @@ function RetrieveFormSubmit() {
       }, [items]);
 
     return (
+        <div>
         <div id="RetrieveFormSubmit">
-            <button onClick={handleChange}>Click here to retreive previous submitted form</button>
+            <button onClick={handleChange}>Click here to retrieve previous submitted form</button>
             <p>{itemString}</p>
+        </div>
+        <div>
+        <p>
+            Please ensure you start JSON Server before trying to retrieve data.
+        </p>
+        </div>
         </div>
     )
 }

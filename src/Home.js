@@ -20,7 +20,7 @@ function Home() {
         <div>
             <div id="home">
                 <h2>My name is Callum and I'm a Software Engineer</h2>
-                <Button buttonDir="#about" sectionName="about"/>
+                <Button buttonDir="about" sectionName="about"/>
                 <button className="darkModeButton" id={state} onClick={handleClick}>{buttonText}</button>
                 <ContactMe />
                 <RetrieveFormSubmit />

@@ -1,3 +1,6 @@
+//this component is potentially redundent
+
+
 import React, {useState} from "react";
 
 

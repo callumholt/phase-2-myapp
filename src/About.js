@@ -6,7 +6,7 @@ function About() {
         
         <div id="about">
             <h2>This is my about section</h2>
-            <Button buttonDir="#portfolio" sectionName="portfolio"/>
+            <Button buttonDir="portfolio" sectionName="portfolio"/>
         </div>
         
     );

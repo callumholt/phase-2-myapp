@@ -19,6 +19,8 @@ function ContactMe() {
             headers: {"content-type":"application/json"},
             body: JSON.stringify(formData)
         });
+        alert("thanks for the submission");
+        
         if(!response.ok) {
             console.error("an error occured");
         }
@@ -29,30 +31,42 @@ function ContactMe() {
     return (
         <div id="contactForm">
             <form onSubmit={handleSubmit}>
+                <div className="formGroup">
                 <label>
-                    Name: 
-                    <input name="FullName" onChange={handleChange}/>
-                </label>
+                        Name: 
+                        <input name="FullName" value={formData.fullName}  onChange={handleChange}/>
+                    </label>
 
+                </div>
+                <div className="formGroup">
                 <label>
-                    Email:
-                    <input name="email" onChange={handleChange}/>
-                </label>
+                        Email:
+                        <input name="email" value={formData.email}  onChange={handleChange}/>
+                    </label>
 
+                </div>
+                <div className="formGroup">
                 <label>
-                    Mobile number:
-                    <input name="phone" onChange={handleChange}/>
-                </label>
+                        Mobile number:
+                        <input name="phone" value={formData.phone}  onChange={handleChange}/>
+                    </label>
 
+                </div>
+                <div className="formGroup">
                 <label>
-                    Comments:
-                    <input name="comments" onChange={handleChange}/>
-                </label>
+                        Comments:
+                        <input name="comments" value={formData.comments}  onChange={handleChange}/>
+                    </label>
 
-                <label>
-                    Submit:
-                    <button type="submit" >submit</button>
-                </label>
+                </div>
+                <div className="formGroup">
+                <label id="submitButton">
+                        <button type="submit" >submit</button>
+                    </label>
+
+                </div>
+                
+                         
             </form>
         </div>
     )
